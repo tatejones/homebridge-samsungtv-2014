@@ -8,6 +8,7 @@
       "es2017",
       "es2018"
     ],
+    "typeRoots": ["./src/types", "node_modules/@types"],
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -21,6 +22,6 @@
     "src/"
   ],
   "exclude": [
-    "**/*.spec.ts"
+    "**/*.spec.ts", "types"
   ]
 }

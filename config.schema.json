@@ -1,15 +1,36 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "SamsungTVPrior2014",
   "pluginType": "platform",
-  "singular": true,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
-        "type": "string",
-        "required": true,
-        "default": "Example Dynamic Platform"
+      "tvs": {
+        "title": "TVs",
+        "type": "array",
+        "items": {
+          "title": "TV",
+          "type": "object",
+          "properties": {
+            "displayName": {
+              "title": "Name",
+              "type": "string",
+              "description": "Name for your TV",
+              "required": true
+            },
+            "ipAddress": {
+              "title": "IP Address",
+              "type": "string",
+              "description": "IP address of the TV",
+              "required": true
+            },
+            "macAddress": {
+              "title": "MAC Address",
+              "type": "string",
+              "description": "MAC address of the TV",
+              "required": true
+            }
+          }
+        }
       }
     }
   }
